@@ -38,5 +38,5 @@ app.get('/temperatura/celsiusparafahrenheit/:valor', (req, res) => {
 
 
 app.listen(8080, () => {
-    console.log("Servidor rodando na porta 8080");
+    console.log("Server up port: 8080");
 });

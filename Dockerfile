@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+#EXPOSE 8080
 
-CMD ["node", "index.js"]
+CMD ["node", "index.js"] && gunicorn --bind 0.0.0.0:$PORT wsgi 
